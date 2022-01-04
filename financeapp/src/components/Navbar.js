@@ -1,11 +1,15 @@
 const Navbar = () => {
   const title = "Navigation bar";
-  const array = ["Home", "Transactions"];
+  const array = [
+    { name: "Home", link: "http://localhost:3000/" },
+    { name: "Transactions", link: "http://localhost:3000/transactions" },
+  ];
   return (
-    <div className="Navbar">
+    <div className="navbar">
       <h1>{title}</h1>
       <p>
-        {array[0]} {array[1]}
+        <a href={[array[0].link]}>{array[0].name} </a>
+        <a href={[array[1].link]}>{array[1].name} </a>
       </p>
     </div>
   );
