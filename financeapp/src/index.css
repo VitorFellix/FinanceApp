@@ -47,6 +47,7 @@ body {
 }
 
 .navbar a {
+  color: rgb(46, 46, 46);
   text-decoration: none;
   margin-inline: 0.7rem;
 }
@@ -93,7 +94,7 @@ body {
   margin-left: 1.5rem;
 }
 
-.transaction:hover {
+.transactionHeader:hover {
   background-color: orange;
 }
 
