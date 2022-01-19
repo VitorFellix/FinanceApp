@@ -8,6 +8,27 @@ const TransactionsList = ({ transactions, handleDelete }) => {
       {transactions.map((transaction) => (
         <div className="transactionHeader container" key={transaction.id}>
           <div>
+            <h2>{transaction.title}</h2>
+            <p className="transactionDate"></p>
+          </div>
+          <div className="alignRight">
+            <p>{"R$ " + transaction.id}</p>
+            <p className="transactionOptional">
+              {transaction.id} {transaction.body}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default TransactionsList;
+
+/*
+  {transactions.map((transaction) => (
+        <div className="transactionHeader container" key={transaction.id}>
+          <div>
             <h2>{transaction.name}</h2>
             <p className="transactionDate">{transaction.date}</p>
             <button onClick={() => handleDelete(transaction.id)}>Delete</button>
@@ -18,8 +39,4 @@ const TransactionsList = ({ transactions, handleDelete }) => {
           </div>
         </div>
       ))}
-    </div>
-  );
-};
-
-export default TransactionsList;
+       */

@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import SimpleButton from "./components/SimpleButton";
 import Transactions from "./components/Transactions";
 
 function App() {
@@ -7,7 +7,6 @@ function App() {
     <div className="app">
       <Navbar />
       <div className="content">
-        <Home />
         <Transactions />
       </div>
     </div>
