@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import TransactionsList from "./TransactionsList";
 
 const Transactions = () => {
+  const [isPending, setIsPending] = useState(true);
   const [transactions, setTransactions] = useState(null);
+  const loadingTime = 1;
   // useState([
   //   // this is a HOOK
   //   {
@@ -27,19 +29,27 @@ const Transactions = () => {
     // console.log(transactions);
     // if you change something inside the useState from here, you will end in a infinite loop
     // good for fetching data
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setTransactions(data);
-      });
+    setIsPending(true);
+    setTimeout(() => {
+      fetch("https://jsonplaceholder.typicode.com/posts")
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          console.log(data);
+          setTransactions(data);
+          setIsPending(false);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }, loadingTime);
   }, []); // this a dependency array, if empty it will run effect only the first time
   // effect look for the values inside this array and if they change he will run useEffect
 
   return (
     <div>
+      {isPending && <div>Loading...</div>}
       {transactions && <TransactionsList transactions={transactions} />}
     </div>
   );
