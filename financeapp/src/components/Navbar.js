@@ -1,5 +1,4 @@
-const Navbar = () => {
-	const title = "App";
+const Navbar = ({title}) => {
 	const array = [
 		{ name: "Home", link: "http://localhost:3000/" },
 		{ name: "Transactions", link: "http://localhost:3000/transactions" },
