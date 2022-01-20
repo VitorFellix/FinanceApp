@@ -2,102 +2,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu&display=swap");
 
 * h1 {
-  font-size: 3rem;
+	font-size: 3rem;
 }
 
 * h2 {
-  font-size: 1.8rem;
-}
-
-* h3 {
-  font-size: 1rem;
+	font-size: 1.3rem;
 }
 
 body {
-  background-color: rgb(221, 221, 221);
-  color: rgb(46, 46, 46);
+	background-color: rgb(221, 221, 221);
+	color: rgb(46, 46, 46);
 }
 
 .content {
-  font-family: "Ubuntu", sans-serif;
-  max-width: 70%;
-  margin: 0 auto;
+	font-family: "Ubuntu", sans-serif;
+	max-width: 70%;
+	margin: 0 auto;
 }
 
 /* navbar */
 .navbar {
-  font-family: "Bebas Neue", cursive;
-  display: flexbox;
-  max-width: 70%;
-  margin: 0 auto;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+	font-family: "Bebas Neue", cursive;
+	display: flexbox;
+	max-width: 70%;
+	margin: 0 auto;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
 }
 
 .navbar h1 {
-  border-bottom: rgb(46, 46, 46);
-  border-bottom-style: solid;
-  margin: 0 auto;
+	border-bottom: rgb(46, 46, 46);
+	border-bottom-style: solid;
+	margin: 0 auto;
 }
 
 .navbar p {
-  margin: 0 auto;
-  text-align: right;
-  font-size: 1.3rem;
+	text-align: right;
+	font-size: 1.3rem;
+	margin: 0 auto;
 }
 
 .navbar a {
-  color: rgb(46, 46, 46);
-  text-decoration: none;
-  margin-inline: 0.7rem;
+	color: rgb(46, 46, 46);
+	text-decoration: none;
+	margin-inline: 0.7rem;
 }
 
 .navbar a:hover {
-  color: orange;
+	color: orange;
 }
 
 /* Transactions */
 
-.container{
-  display: flex;
+.container {
+	display: flex;
 }
 .container > div {
-  flex: 1;
+	flex: 1;
 }
 
 .transactionsList {
-  margin: 3rem;
+	width: fit-content;
 }
 
 .transactionHeader {
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background-color: rgb(46, 46, 46);
-  box-shadow: 4px 4px 10px 1px rgb(95, 95, 95);
-  color: rgb(221, 221, 221);
+	font-size: 0.9rem;
+	margin-bottom: 1.5rem;
+	padding: 1rem;
+	background-color: rgb(46, 46, 46);
+	box-shadow: 4px 4px 10px 1px rgb(95, 95, 95);
+	color: rgb(221, 221, 221);
 }
 
 .transactionHeader h2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-transform: capitalize;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-transform: capitalize;
 }
 
 .transactionOptional {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 0.75rem;
-  text-transform: capitalize;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 0.75rem;
+	text-transform: capitalize;
 }
-.transactionDate{
-  margin-left: 1.5rem;
+.transactionDate {
+	margin-left: 1.5rem;
 }
 
 .transactionHeader:hover {
-  background-color: orange;
+	background-color: orange;
 }
 
-.alignRight > p{
-  text-align: right;
+.alignRight > p {
+	text-align: right;
 }
